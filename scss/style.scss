@@ -90,6 +90,10 @@ h1 {
   font-size: 2rem;
   color: $rosa;
 
+  @media (min-width: 768px) {
+    font-size: 4rem;
+  }
+
   span {
     color: $rosinha;
   }
@@ -102,6 +106,10 @@ h1 {
   p {
     font-weight: bold;
     margin: 1.5rem auto;
+
+    @media (min-width: 768px) {
+      font-size: 1.1rem;
+    }
   }
 
   a {

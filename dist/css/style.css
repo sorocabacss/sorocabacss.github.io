@@ -442,6 +442,9 @@ h1 {
   font-family: 'Montserrat', sans-serif;
   font-size: 2rem;
   color: #ff6f6f; }
+  @media (min-width: 768px) {
+    h1 {
+      font-size: 4rem; } }
   h1 span {
     color: #f4cccc; }
 
@@ -451,6 +454,9 @@ h1 {
   .main p {
     font-weight: bold;
     margin: 1.5rem auto; }
+    @media (min-width: 768px) {
+      .main p {
+        font-size: 1.1rem; } }
   .main a {
     display: inline-block;
     padding: .75rem 1.5rem;
