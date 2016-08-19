@@ -70,6 +70,13 @@ h1 {
 
   p {
     font-weight: bold;
+    margin: 1.5rem auto;
+  }
+
+  a {
+    display: inline-block;
+    padding: .5rem;
+    border-radius: 20px;
   }
 }
 

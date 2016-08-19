@@ -422,7 +422,12 @@ h1 {
   margin: auto;
   max-width: 90vw; }
   .main p {
-    font-weight: bold; }
+    font-weight: bold;
+    margin: 1.5rem auto; }
+  .main a {
+    display: inline-block;
+    padding: .5rem;
+    border-radius: 20px; }
 
 .members p {
   font-weight: bold; }
