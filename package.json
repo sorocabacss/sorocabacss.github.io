@@ -1,0 +1,26 @@
+{
+  "name": "sorocabacss.github.io",
+  "version": "1.0.0",
+  "description": "sorocabacss community site",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sorocabacss/sorocabacss.github.io.git"
+  },
+  "keywords": [
+    "sorocaba",
+    "frontend",
+    "css",
+    "scss",
+    "sass"
+  ],
+  "author": "felipe bernardes, amanda vilela, ana gabriel, felipe soares, andré cristian",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sorocabacss/sorocabacss.github.io/issues"
+  },
+  "homepage": "https://github.com/sorocabacss/sorocabacss.github.io#readme"
+}
