@@ -1,5 +1,8 @@
 # sorocabacss.github.io
-Site da comunidade de CSS de Sorocaba.
+![](http://i.imgur.com/F3Rssb5.png)  
+
+##about  
+Site da comunidade de CSS de Sorocaba, interior de SP.
 
 ## dependencias
 1. nodejs -> (instale via NVM)(https://github.com/creationix/nvm)  
