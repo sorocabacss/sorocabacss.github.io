@@ -5,7 +5,7 @@
 Site da comunidade de CSS de Sorocaba, interior de SP.
 
 ## dependencias
-1. nodejs -> (instale via NVM)(https://github.com/creationix/nvm)  
+1. nodejs -> [instale via NVM](https://github.com/creationix/nvm)  
 2. gulp, bower & browser-sync globalmente -> instale com ```npm install gulp bower browser-sync -g```  
 
 ## rodaaaaaaaaaaaaaando!
