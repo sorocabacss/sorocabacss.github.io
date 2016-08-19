@@ -106,12 +106,22 @@ h1 {
 
   a {
     display: inline-block;
-    padding: .5rem 1rem;
+    padding: .75rem 1.5rem;
+    font-size: 1.2rem;
     border-radius: 20px;
     background: $rosa;
     color: #fff;
     text-decoration: none;
     font-weight: bold;
+    transition: all .2s ease;
+
+    &:visited {
+      color: #fff;
+    }
+
+    &:hover {
+      background: darken($rosa, 10%);
+    }
   }
 }
 
