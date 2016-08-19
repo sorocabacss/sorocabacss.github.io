@@ -414,9 +414,9 @@ header {
 h1 {
   font-family: 'Montserrat', sans-serif;
   font-size: 2rem;
-  color: pink; }
+  color: #ff6f6f; }
   h1 span {
-    color: pink; }
+    color: #f4cccc; }
 
 .main {
   margin: auto;
