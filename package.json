@@ -22,5 +22,10 @@
   "bugs": {
     "url": "https://github.com/sorocabacss/sorocabacss.github.io/issues"
   },
-  "homepage": "https://github.com/sorocabacss/sorocabacss.github.io#readme"
+  "homepage": "https://github.com/sorocabacss/sorocabacss.github.io#readme",
+  "dependencies": {
+    "browser-sync": "^2.14.0",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.3.2"
+  }
 }
