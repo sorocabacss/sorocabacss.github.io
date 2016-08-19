@@ -490,6 +490,10 @@ h1 {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center; }
+  .members li a {
+    display: block;
+    width: 100%;
+    height: 100%; }
   .members li:nth-of-type(1) {
     background-image: url("../img/amanda-vilela.jpg"); }
   .members li:nth-of-type(2) {
@@ -522,11 +526,3 @@ footer {
     animation: none; }
   .github-corner .octo-arm {
     animation: octocat-wave 560ms ease-in-out; } }
-
-.github-corner {
-  position: fixed !important;
-  top: 0;
-  right: 0;
-  display: block;
-  width: 80px;
-  height: 80px; }
