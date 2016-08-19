@@ -1,3 +1,5 @@
+@import 'libs/normalize';
+
 $rosa: pink;
 $rosinha: pink;
 
@@ -7,10 +9,21 @@ $rosinha: pink;
   box-sizing: border-box;
 }
 
+h1,
+h2,
+p {
+  margin: 0;
+}
+
 ul {
   padding: 0;
   margin: 0;
   list-style: none;
+}
+
+html {
+  font-size: 16px;
+  font-family: 'Space Mono', monospace;
 }
 
 body {
@@ -18,12 +31,63 @@ body {
 }
 
 header {
-  h1 {
-    font-family: 'Montserrat', sans-serif;
+  position: relative;
+  z-index: 1;
+  min-height: 100vh;
+  display: flex;
+  flex-flow: column;
+  color: #fff;
+  text-align: center;
+
+  &:before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: '';
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: #f857a6;
+    background: -webkit-linear-gradient(to left, #f857a6 , #ff5858);
+    background: linear-gradient(to left, #f857a6 , #ff5858);
+    opacity: .4;
   }
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  color: $rosa;
+
+  span {
+    color: $rosinha;
+  }
+}
+
+.main {
+  margin: auto;
+  max-width: 90vw;
 
   p {
-    font-family: 'Space Mono', monospace;
+    font-weight: bold;
+  }
+}
+
+.members {
+  p {
+    font-weight: bold;
   }
 
+  ul {
+    display: flex;
+    width: 90vw;
+    margin: 0 auto;
+  }
+
+  li {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #fff;
+  }
 }

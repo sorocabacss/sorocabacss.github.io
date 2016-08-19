@@ -26,6 +26,7 @@
   "dependencies": {
     "browser-sync": "^2.14.0",
     "gulp": "^3.9.1",
+    "gulp-rename": "^1.2.2",
     "gulp-sass": "^2.3.2"
   }
 }

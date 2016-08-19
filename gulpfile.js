@@ -1,9 +1,11 @@
 var gulp = require('gulp');
     sass = require('gulp-sass');
+    rename = require('gulp-rename');
     browserSync = require('browser-sync').create();
 
 gulp.task('dependencies', function() {
-  gulp.src('bower_components/normalize-scss/_normalize.scss')
+  gulp.src('bower_components/normalize-css/normalize.css')
+    .pipe(rename('_normalize.scss'))
     .pipe(gulp.dest('./scss/libs/'));
 });
 
