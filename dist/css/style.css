@@ -397,7 +397,10 @@ header {
   display: flex;
   flex-flow: column;
   color: #fff;
-  text-align: center; }
+  text-align: center;
+  background-image: url("../dist/img/Sorocaba.jpg");
+  background-size: cover;
+  background-position: center; }
   header:before {
     position: absolute;
     left: 0;
