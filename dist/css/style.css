@@ -451,6 +451,8 @@ h1 {
 .main {
   margin: auto;
   max-width: 90vw; }
+  .main a {
+    letter-spacing: 1.5px; }
   .main p {
     font-weight: bold;
     margin: 1.5rem auto; }
