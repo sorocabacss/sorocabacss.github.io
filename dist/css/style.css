@@ -474,6 +474,9 @@ h1 {
     .main a:hover {
       background: #ff3c3c; }
 
+.members h2 {
+  letter-spacing: 1px; }
+
 .members p {
   font-weight: bold; }
 
