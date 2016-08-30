@@ -21,7 +21,7 @@ gulp.task('scss', function() {
     .pipe(gulp.dest(joinPaths(paths.dist, 'css')));
 });
 
-gulp.task('default', function() {
+gulp.task('default', ['scss'], function() {
   browserSync.init({ server: './' });
 
   gulp.watch(joinPaths(paths.scss, '*.scss'), ['scss']);

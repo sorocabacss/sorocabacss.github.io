@@ -15,14 +15,18 @@ fetch('https://api.github.com/repos/sorocabacss/sorocabacss.github.io/contributo
         var li = document.createElement('li');
         var link = document.createElement('a');
         var image = document.createElement('img');
+        var tooltip = document.createElement('p');
 
         image.src = user.avatar_url + '&s=40';
         image.alt = user.name;
-        
+
+        tooltip.appendChild(document.createTextNode(user.name));
+
         link.target = 'github';
         link.href = user.html_url;
 
         link.appendChild(image);
+        li.appendChild(tooltip);
         li.appendChild(link);
         container.appendChild(li);
       });
