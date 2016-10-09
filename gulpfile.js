@@ -1,7 +1,9 @@
-var gulp = require('gulp');
-    sass = require('gulp-sass');
-    browserSync = require('browser-sync').create();
-    joinPaths = require('path').join;
+var gulp = require('gulp'),
+    sass = require('gulp-sass'),
+    browserSync = require('browser-sync').create(),
+    joinPaths = require('path').join,
+    rename = require('gulp-rename'),
+    minifyCss = require('gulp-minify-css');
 
 var paths = {
   entry: 'index.html',
@@ -18,6 +20,9 @@ gulp.task('scss', function() {
         joinPaths(paths.bower, 'normalize-css')
       ]
     }).on('error', sass.logError))
+    .pipe(gulp.dest(joinPaths(paths.dist, 'css')))
+    .pipe(minifyCss())
+    .pipe(rename('style.min.css'))
     .pipe(gulp.dest(joinPaths(paths.dist, 'css')));
 });
 
