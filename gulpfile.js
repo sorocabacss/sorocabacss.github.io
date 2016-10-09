@@ -3,11 +3,13 @@ var gulp = require('gulp'),
     browserSync = require('browser-sync').create(),
     joinPaths = require('path').join,
     rename = require('gulp-rename'),
-    minifyCss = require('gulp-minify-css');
+    minifyCss = require('gulp-minify-css'),
+    uglify = require('gulp-uglify');
 
 var paths = {
   entry: 'index.html',
   scss: './scss',
+  js: './js',
   bower: './bower_components',
   dist: './dist'
 }
@@ -26,11 +28,16 @@ gulp.task('scss', function() {
     .pipe(gulp.dest(joinPaths(paths.dist, 'css')));
 });
 
-gulp.task('default', ['scss'], function() {
+gulp.task('compressJs', function () {
+    gulp.src(joinPaths(paths.js, 'scripts.js'))
+    .pipe(uglify())
+    .pipe(rename('scripts.min.js'))
+    .pipe(gulp.dest(joinPaths(paths.dist, 'js')));
+});
+
+gulp.task('default', ['scss', 'compressJs'], function() {
   browserSync.init({ server: './' });
-
   gulp.watch(joinPaths(paths.scss, '*.scss'), ['scss']);
-
   gulp.watch([
     paths.entry,
     joinPaths(paths.dist, '**/*.*')
