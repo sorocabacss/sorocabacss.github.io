@@ -24,7 +24,6 @@ gulp.task('scss', function() {
         joinPaths(paths.bower, 'normalize-css')
       ]
     }).on('error', sass.logError))
-    .pipe(gulp.dest(joinPaths(paths.dist, 'css')))
     .pipe(minifyCss())
     .pipe(rename('style.min.css'))
     .pipe(gulp.dest(joinPaths(paths.dist, 'css')));
