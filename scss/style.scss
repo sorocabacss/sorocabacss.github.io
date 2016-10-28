@@ -1,49 +1,5 @@
 @import 'normalize';
 
-$rosa: #ff6f6f;
-$rosinha: #f4cccc;
-
-*,
-*:after,
-*:before {
-  box-sizing: border-box;
-}
-
-h1,
-h2,
-p {
-  margin: 0;
-}
-
-ul {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-
-html {
-  font-size: 16px;
-  font-family: 'Space Mono', monospace;
-}
-
-body {
-  background-color: pink;
-  position: relative;
-
-  &:after {
-    z-index: 2;
-    position: fixed;
-    left: 0;
-    top: 0;
-    content: '';
-    width: 100%;
-    height: 5px;
-    background: #f857a6;
-    background: -webkit-linear-gradient(to left, #f857a6 , #ff5858);
-    background: linear-gradient(to left, #f857a6 , #ff5858);
-  }
-}
-
 header {
   position: relative;
   z-index: 1;
