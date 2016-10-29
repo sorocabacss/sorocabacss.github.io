@@ -33,12 +33,14 @@
       font-weight: normal;
       padding: 5px;
       border-radius: 5px;
-      background: rgba(0, 0, 0, 0.9);
-      border: 1px solid #fff;
+      background: rgba($black, .9);
+      border: 1px solid $white;
       left: 50%;
       transform-origin: bottom left;
-      transform: scale(0) translateY(-0px) translateX(-50%);
-      transition: all .2s ease-in-out;
+      transform: scale(0) translateY(0) translateX(-50%);
+      transition-property: transform, opacity;
+      transition-duration: .2s;
+      transition-timing-function: ease-in-out;
     }
 
     &:hover p {

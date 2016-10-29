@@ -20,18 +20,20 @@
     padding: .75rem 1.5rem;
     font-size: 1.2rem;
     border-radius: 20px;
-    background: $rosa;
-    color: #fff;
+    background: $bittersweet;
+    color: $white;
     text-decoration: none;
     font-weight: bold;
-    transition: all .2s ease;
+    transition-property: background, color;
+    transition-duration: .2s;
+    transition-timing-function: ease;
 
     &:visited {
-      color: #fff;
+      color: $white;
     }
 
     &:hover {
-      background: darken($rosa, 10%);
+      background: darken($bittersweet, 10%);
     }
   }
 }

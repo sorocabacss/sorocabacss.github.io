@@ -5,7 +5,8 @@ var gulp = require('gulp'),
     rename = require('gulp-rename'),
     minifyCss = require('gulp-minify-css'),
     uglify = require('gulp-uglify'),
-    imagemin = require('gulp-imagemin');
+    imagemin = require('gulp-imagemin'),
+    autoprefixer = require('gulp-autoprefixer');
 
 var paths = {
   entry: 'index.html',
@@ -24,6 +25,7 @@ gulp.task('scss', function() {
         joinPaths(paths.bower, 'normalize-css')
       ]
     }).on('error', sass.logError))
+    .pipe(autoprefixer({ browsers: ['last 2 versions'] }))
     .pipe(minifyCss())
     .pipe(rename('style.min.css'))
     .pipe(gulp.dest(joinPaths(paths.dist, 'css')));
@@ -44,7 +46,7 @@ gulp.task('compressImages', function () {
 
 gulp.task('default', ['scss', 'compressJs', 'compressImages'], function() {
   browserSync.init({ server: './' });
-  gulp.watch(joinPaths(paths.scss, '*.scss'), ['scss']);
+  gulp.watch(joinPaths(paths.scss, '**/*.scss'), ['scss']);
   gulp.watch([
     paths.entry,
     joinPaths(paths.dist, '**/*.*')

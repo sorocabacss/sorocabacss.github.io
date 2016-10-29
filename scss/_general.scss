@@ -22,7 +22,7 @@ html {
 }
 
 body {
-  background-color: pink;
+  background-color: $pink;
   position: relative;
 
   &:after {
@@ -33,9 +33,8 @@ body {
     content: '';
     width: 100%;
     height: 5px;
-    background: #f857a6;
-    background: -webkit-linear-gradient(to left, #f857a6 , #ff5858);
-    background: linear-gradient(to left, #f857a6 , #ff5858);
+    background: $brilliant-rose;
+    background: linear-gradient(to left, $brilliant-rose, $persimmon);
   }
 }
 
