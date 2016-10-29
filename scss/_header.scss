@@ -1,0 +1,54 @@
+header {
+  position: relative;
+  z-index: 1;
+  min-height: 100vh;
+  display: flex;
+  flex-flow: column;
+  color: #fff;
+  text-align: center;
+  background-image: url('../img/sorocaba.jpg');
+  background-size: cover;
+  background-position: center;
+
+  &:before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: '';
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: #f857a6;
+    background: -webkit-linear-gradient(to left, #f857a6 , #ff5858);
+    background: linear-gradient(to left, #f857a6 , #ff5858);
+    opacity: .5;
+  }
+
+  &:after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: '';
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    opacity: .8;
+    background: #000;
+    background: -webkit-linear-gradient(bottom, rgba(0,0,0,.5));
+    background: linear-gradient(bottom, rgba(0,0,0,.2));
+  }
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  color: $rosa;
+
+  @media (min-width: 768px) {
+    font-size: 4rem;
+  }
+
+  span {
+    color: $rosinha;
+  }
+}
