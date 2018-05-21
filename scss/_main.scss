@@ -3,29 +3,18 @@
   max-width: 90vw;
 
   a {
-    letter-spacing: 1.5px;
-  }
-
-  p {
-    font-weight: bold;
-    margin: 1.5rem auto;
-
-    @media (min-width: 768px) {
-      font-size: 1.1rem;
-    }
-  }
-
-  a {
-    display: inline-block;
-    padding: .75rem 1.5rem;
-    font-size: 1.2rem;
-    border-radius: 20px;
     background: $bittersweet;
+    border-radius: 10px;
     color: $white;
-    text-decoration: none;
+    display: inline-block;
+    font-size: 1.2rem;
     font-weight: bold;
-    transition-property: background, color;
+    letter-spacing: 1.5px;
+    margin-top: 1.5rem;
+    padding: .7rem 1.3rem;
+    text-decoration: none;
     transition-duration: .2s;
+    transition-property: background, color;
     transition-timing-function: ease;
 
     &:visited {
