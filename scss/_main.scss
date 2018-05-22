@@ -1,31 +1,33 @@
 .main {
-  margin: auto;
-  max-width: 90vw;
+  align-items: center;
+  display: flex;
+  flex-direction: column-reverse;
+  height: 100vh;
+  justify-content: center;
+  width: 100%;
 
-  a {
-    letter-spacing: 1.5px;
+  @media (min-width: $md-breakpoint) {
+    flex-direction: column;
   }
 
-  p {
-    font-weight: bold;
-    margin: 1.5rem auto;
-
-    @media (min-width: 768px) {
-      font-size: 1.1rem;
-    }
+  &__content {
+    margin: auto;
+    max-width: 90vw;
   }
 
-  a {
-    display: inline-block;
-    padding: .75rem 1.5rem;
-    font-size: 1.2rem;
-    border-radius: 20px;
+  &__button {
     background: $bittersweet;
+    border-radius: 10px;
     color: $white;
-    text-decoration: none;
+    display: inline-block;
+    font-size: 1.2rem;
     font-weight: bold;
-    transition-property: background, color;
+    letter-spacing: 1.5px;
+    margin-top: 1.5rem;
+    padding: .7rem 1.3rem;
+    text-decoration: none;
     transition-duration: .2s;
+    transition-property: background, color;
     transition-timing-function: ease;
 
     &:visited {
@@ -34,6 +36,46 @@
 
     &:hover {
       background: darken($bittersweet, 10%);
+    }
+  }
+
+  &__link {
+    color: $white;
+    display: block;
+    font-size: 1.2rem;
+    padding: .5rem;
+    padding-bottom: 1rem;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+
+    @media(min-width: $md-breakpoint) {
+      padding-left: 1.75rem;
+      padding-top: 1.5rem;
+      text-align: left;
+      width: 100%;
+    }
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__title {
+    color: $bittersweet;
+    display: block;
+    font-family: $primary-font, sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    padding-left: 0;
+    text-align: center;
+
+    @media (min-width: $md-breakpoint) {
+      font-size: 4rem;
+    }
+
+    &__highlight {
+      color: $beauty-bush;
     }
   }
 }
