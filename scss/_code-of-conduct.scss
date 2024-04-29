@@ -1,0 +1,79 @@
+.code-of-conduct {
+  &__back-button {
+    left: 0;
+    margin-left: .75rem;
+    margin-top: .75rem;
+    position: absolute;
+    top: 0;
+
+    &__icon {
+      height: 40px;
+      opacity: .8;
+      width: 40px;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+
+  &__title {
+    font-family: $primary-font, sans-serif;
+    font-size: 2rem;
+    margin-top: 5rem;
+    text-align: center;
+
+    @media (min-width: $md-breakpoint) {
+      font-size: 3rem;
+      margin-top: 4rem;
+    }
+  }
+
+  &__container-text {
+    margin: auto;
+    width: 85%;
+
+    @media (min-width: $md-breakpoint) {
+      width: 70%;
+    }
+
+    &__text {
+      font-weight: 500;
+      line-height: 1.5rem;
+      margin: 1.5rem auto;
+      text-align: left;
+
+      @media (min-width: $md-breakpoint) {
+        font-size: 1.1rem;
+        text-align: center;
+      }
+    }
+  }
+
+
+  &__button-sorocabacss {
+    color: $bittersweet;
+    display: block;
+    font-family: $primary-font, sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    padding-left: 0;
+    text-align: center;
+    text-decoration: none;
+    transition: color .5s;
+
+    &__highlight {
+      color: $beauty-bush;
+      transition: color .5s;
+    }
+
+    &:hover {
+      color: $beauty-bush;
+
+      .code-of-conduct__button-sorocabacss__highlight {
+        color: $bittersweet;
+      }
+    }
+  }
+}
